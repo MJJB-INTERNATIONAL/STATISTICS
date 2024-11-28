@@ -904,22 +904,24 @@ function calculateSDFromMedian() {
  document.getElementById("output-section").innerHTML += tableHtml;
 }
 
+ 
  // Prevent right-click, Ctrl+U, and Developer Tools shortcuts
  document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 'i' || e.key === 'I' || e.key === 'J' || e.key === 'j')) {
+    if (e.ctrlKey && (e.key === 'S' || e.key === 's' || e.key === 'u' || e.key === 'U' || e.key === 'i' || e.key === 'I' || e.key === 'J' || e.key === 'j')) {
         e.preventDefault();
-        alert('Error In Opening_Error Code:69');
+        
     }
     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
         e.preventDefault();
-        alert('Unable To Open_Error Code:79');
+        
     }
 });
 
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
-    alert('Error_Not Clicked_Code:89');
 });
+
+
 
  </script>
 
