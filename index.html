@@ -193,13 +193,16 @@ footer p {
 <div id="output-section"></div>
 
 <footer>
-    <b><p> © 2024 M.J.J.B. All Rights Reserved.</p></b>
-  <img src="https://raw.githubusercontent.com/MJJB-INTERNATIONAL/MJJBimge/1baef02cf41529aff671d9ce9350107ecb6d127c/MJJB8w.svg">
-  
-</footer>
+        <b><p>&copy; <span id="year"></span> M.J.J.B. All Rights Reserved.</p></b>
+      <img src="https://raw.githubusercontent.com/MJJB-INTERNATIONAL/MJJBimge/1baef02cf41529aff671d9ce9350107ecb6d127c/MJJB8w.svg">
+    </footer>
 
 <script>
-    // ... (rest of your JavaScript code)
+ 
+document.getElementById('year').textContent = new Date().getFullYear();
+
+
+   // ... (rest of your JavaScript code)
  let rowCount = 1;
  let xiFiRowCount = 1;
  let classWidth = 0;
